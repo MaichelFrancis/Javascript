@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="array.js"></script>
+    <style>
+        h3 {
+            color: blue;
+        }
+
+        h1 {
+            color: rgb(238, 0, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Array Methods</h1>
+    <h3>length</h3>
+    <p>The length of the array is:</p>
+    <p id="length"></p>
+    <h3>to string</h3>
+    <p>The string of the array is:</p>
+    <p id="to string"></p>
+    <h3>Pop</h3>
+    <p>Pop value is:</p>
+    <p id="pop"></p>
+    <p id="pop1"></p>
+    <h3>Push</h3>
+    <p>Push value is:</p>
+    <p id="push"></p>
+    <p id="push1"></p>
+    <h3>Shift</h3>
+    <p>Shift value is:</p>
+    <p id="shift"></p>
+    <p id="shift1"></p>
+    <h3>UnShift</h3>
+    <p>UnShift value is:</p>
+    <p id="unshift"></p>
+    <p id="unshift1"></p>
+    <h3>Delete</h3>
+    <p>Deleted value is:</p>
+    <p id="delete"></p>
+    <h3>Concat</h3>
+    <p>Concat value is:</p>
+    <p id="concat"></p>
+    <h3>Flat</h3>
+    <p>Flat value is:</p>
+    <p id="flat"></p>
+    <h3>Splice</h3>
+    <p>splice value is:</p>
+    <p id="splice"></p>
+    <p id="splice1"></p>
+    <p id="splice2"></p>
+    <h3>Slice</h3>
+    <p>slice value is:</p>
+    <p id="slice1"></p>
+    <p id="slice2"></p>
+
+
+</body>
+<script>
+    var array = ["EMP01", "Maichel", "Male", "O+", 959720440]
+    var array1 = array.length
+    document.getElementById("length").innerHTML = array.length
+
+    var array2 = ["EMP01", "Maichel", "Male", "O+", 959720440]
+    document.getElementById("to string").innerHTML = array2.toString()
+
+    var array4 = ["EMP01", "Maichel", "Male", "O+", 959720440];
+    document.getElementById("pop").innerHTML = array4.pop()
+    document.getElementById("pop1").innerHTML = array4
+
+    var array5 = ["EMP01", "Maichel", "Male", "O+", 959720440];
+    var pushvalue = array5.push("address");
+    document.getElementById("push").innerHTML = array5.push()
+    document.getElementById("push1").innerHTML = array5
+
+    var array6 = ["EMP01", "Maichel", "Male", "O+", 959720440];
+    var shiftvalue = array6.shift();
+    document.getElementById("shift").innerHTML = array6.shift()
+    document.getElementById("shift1").innerHTML = array6
+
+    var array7 = ["EMP01", "Maichel", "Male", "O+", 959720440];
+    var shiftvalue = array7.unshift("address");
+    document.getElementById("unshift").innerHTML = array7.unshift()
+    document.getElementById("unshift1").innerHTML = array7
+
+    var array8 = ["EMP01", "Maichel", "Male", "O+", 959720440];
+    var shiftvalue = delete array8[1];
+    document.getElementById("delete").innerHTML = array8;
+
+    var array9 = ["html", "CSS"];
+    var array10 = ["Javascript", "React"];
+    var concatvalue = array9.concat(array10);
+    document.getElementById("concat").innerHTML = concatvalue;
+
+    var array11 = [["html", "CSS"], ["Javascript", "React"], ["Python", "Mongo"]];
+    var flatvalue = array11.flat();
+    document.getElementById("flat").innerHTML = array11.flat();
+
+    var array12 = ["Red", "Green", "Blue", "Black"];
+    var splicevalue = array12.splice(2, 0, "Brown", "Yellow");
+    document.getElementById("splice1").innerHTML = array12;
+
+    var splicevalue = array12.splice(2, 1, "Brown", "Yellow");
+    document.getElementById("splice2").innerHTML = array12;
+
+    var array13 = ["Red", "Green", "Blue", "Black"];
+    var slicevalue = array13.slice(1);
+    document.getElementById("slice1").innerHTML = slicevalue;
+
+    var slicevalue1 = array13.splice(1, 3);
+    document.getElementById("slice2").innerHTML = slicevalue1;
+
+</script>
+
+</html>
