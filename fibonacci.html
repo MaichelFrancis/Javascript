@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="fibonacci.js"></script> -->
+</head>
+
+<body>
+    <h1>Fibonacci Series</h1>
+    <p id="fibonacci">The Answer is:</p>
+    <h1>Object iteration Method</h1>
+    <p id="main-1">Problem</p>
+    <p id="entries">The Answer is:</p>
+    <p id="values">The Answer is:</p>
+    <p id="keys">The Answer is:</p>
+</body>
+<script>
+    let n1 = 0, n2 = 1, n3
+    let number = prompt("Enter your number");
+    for (let i = 1; i <= number; i++) {
+        n3 = n1 + n2;
+        console.log(n3)
+        n1 = n2;
+        n2 = n3;
+    }
+    // document.getElementById("fibonacci").innerhtml = n3;
+
+
+    // //Object iteration method
+    // //Entries
+    let myobj = {
+        firstname: "maichel",
+        email: "maichel018@gmail.com",
+        mobile: 9597204450,
+    }
+    console.log(Object.entries(myobj));
+    console.log(Object.values(myobj));
+    console.log(Object.keys(myobj));
+
+    // document.getElementById("main-1").innerhtml = myobj;
+    // document.getElementById("entries").innerhtml = Object.entries(myobj);
+    // document.getElementById("values").innerhtml = Object.values(myobj);
+    // document.getElementById("keys").innerhtml = Object.keys(myobj);
+    //Entries
+
+
+
+
+</script>
+
+</html>
